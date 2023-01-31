@@ -35,3 +35,27 @@
   text-align: center;
   color: #fff;
 }
+
+.inputs {
+  position: absolute;
+  width: 55px;
+  height: 27px;
+  left: 41px;
+  top: 658px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.box_sizing {
+position: absolute;
+width: 427px;
+height: 65px;
+left: 41px;
+top: 699px;
+background: #EDEDED;
+border: 1px solid #C7C7C7;
+}
