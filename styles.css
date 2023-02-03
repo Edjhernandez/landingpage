@@ -83,3 +83,21 @@
   background: #ededed;
   border: 1px solid #c7c7c7;
 }
+
+.button {
+  position: absolute;
+  border: none;
+  width: 427px;
+  height: 63px;
+  left: 41px;
+  top: 971px;
+  background: #5200FF;
+  font-family: 'Poppins',sans-serif,'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+  
+}
