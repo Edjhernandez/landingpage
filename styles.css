@@ -25,10 +25,26 @@ body {
   height: 50%;
 }
 
-.container .rectangle1 h1,
-p {
+.container .rectangle1 h1 {
   max-width: 250px;
+  font-family: 'Bebas Neue', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 50px;
   text-align: center;
+  color: #fff;
+}
+
+.container .rectangle1 p {
+  max-width: 250px;
+  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
 }
 
 .container .rectangle2 {
@@ -89,11 +105,16 @@ input {
     width: 50%;
   }
 
-  .container .rectangle1 h1,
-  p {
-    max-width: 320px;
+  .container .rectangle1 h1 {
+    max-width: 360px;
     text-align: center;
   }
+
+  .container .rectangle1 p {
+    max-width: 400px;
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 770px) {
@@ -130,9 +151,13 @@ input {
     width: 50%;
   }
 
-  .container .rectangle1 h1,
-  p {
-    max-width: 240px;
+  .container .rectangle1 h1 {
+    max-width: 300px;
+    text-align: right;
+  }
+
+  .container .rectangle1 p {
+    max-width: 280px;
     text-align: right;
   }
 }
