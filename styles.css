@@ -1,5 +1,11 @@
+.container {
+  position: absolute;
+  width: 510px;
+  height: 1139px;
+}
+
 form {
-  position: relative;
+  position: absolute;
 }
 
 .rectangle1 {
@@ -103,5 +109,4 @@ form {
   line-height: 27px;
   text-align: center;
   color: #fff;
-  bottom: 105px;
 }
