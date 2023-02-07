@@ -1,22 +1,184 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
 .container {
-  position: absolute;
-  width: 510px;
-  height: 1139px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.container .rectangle1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/Rectangle\ 1.png");
+  background-size: cover;
+  flex-direction: column;
+  height: 50%;
+}
+
+.container .rectangle1 h1,
+p {
+  max-width: 250px;
+  text-align: center;
+}
+
+.container .rectangle2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background: blue;
+  height: 50%;
 }
 
 form {
-  position: absolute;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 80%;
+  justify-content: center;
 }
 
-.rectangle1 {
+form .inputname,
+.inputemail,
+.button {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  justify-content: center;
+  height: 33%;
+}
+
+form label,
+input {
+  background-color: blueviolet;
+  width: 100%;
+}
+
+@media screen and (min-width: 510px) {
+  .container .rectangle1 {
+    height: 60%;
+  }
+
+  .container .rectangle2 {
+    height: 40%;
+  }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  form .inputname,
+  .inputemail {
+    width: 45%;
+  }
+
+  form .button {
+    width: 50%;
+  }
+
+  .container .rectangle1 h1,
+  p {
+    max-width: 320px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container .rectangle1 {
+    width: 50%;
+    max-height: 850px;
+    height: 100%;
+  }
+
+  .container .rectangle2 {
+    width: 50%;
+    max-height: 850px;
+    height: 100%;
+  }
+
+  form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  form .inputname,
+  .inputemail {
+    width: 45%;
+  }
+
+  form .button {
+    width: 50%;
+  }
+
+  .container .rectangle1 h1,
+  p {
+    max-width: 240px;
+    text-align: right;
+  }
+}
+
+/*
+body {
+  display: flex;
+}
+
+body .container {
   position: absolute;
+  width: 510px;
+  height: 1139px;
+  flex-box
+  display: flex;
+  flex-direction: column;
+}
+
+body .container .rectangle1 {
+  /*position: absolute;
   width: 510px;
   height: 576px;
   left: 0;
   top: 0;
+  flex-box
+  display: flex;
+  width: 100%;     when set width 100% in father .rectangle1 and child img the picture grow
+  height: 50%;
+  background-color: #000;
+  background: url("images\Rectangle 1.png");
+  background-size: cover;
 }
 
-.title1 {
+.rectangle1 img {
+  width: 100%;
+}
+
+form {
+  position: absolute;
+  flex-box
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+h1 {
   position: absolute;
   width: 425px;
   height: 212px;
@@ -29,6 +191,14 @@ form {
   line-height: 77px;
   text-align: center;
   color: #fff;
+  flex-box
+  display: flex;
+  flex: 1 1 100%;
+  align-self: center;
+}
+
+/*.rectangle1 .message1 {
+  width: 100%;
 }
 
 .message1 {
@@ -46,6 +216,9 @@ form {
   color: #fff;
 }
 
+/*form .inputs {
+}
+
 .inputs {
   position: absolute;
   width: 55px;
@@ -58,8 +231,12 @@ form {
   font-size: 18px;
   line-height: 27px;
   color: #000;
+  width: 100%;
 }
 
+/*form .box_sizing {
+
+}
 .box_sizing {
   position: absolute;
   width: 427px;
@@ -110,3 +287,4 @@ form {
   text-align: center;
   color: #fff;
 }
+*/
