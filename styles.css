@@ -1,27 +1,43 @@
 .container {
-  position: absolute;
+  /*position: absolute;
   width: 510px;
   height: 1139px;
-}
-
-form {
-  position: absolute;
+  flex-box*/
+  display: flex;
+  flex-direction: row;
 }
 
 .rectangle1 {
-  position: absolute;
+  /*position: absolute;
   width: 510px;
   height: 576px;
   left: 0;
-  top: 0;
+  top: 0;*/
+  /*flex-box*/
+  display: flex;
+  width: 100%;      /*when set width 100% in father .rectangle1 and child img the picture grow*/
+  height: 50%;
 }
 
+.rectangle1 img {
+  width: 100%;
+}
+
+form {
+  /*position: absolute;*/
+  /*flex-box*/
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+
 .title1 {
-  position: absolute;
+  /*position: absolute;
   width: 425px;
   height: 212px;
   left: 42px;
-  top: 108px;
+  top: 108px;*/
   font-family: 'Bebas Neue', sans-serif, 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -29,7 +45,16 @@ form {
   line-height: 77px;
   text-align: center;
   color: #fff;
+  /*flex-box*/
+  display: flex;
+  flex: 1 1 100%;
+  align-self: center;
 }
+
+
+/*.rectangle1 .message1 {
+  width: 100%;
+}*/
 
 .message1 {
   width: 424px;
@@ -46,6 +71,10 @@ form {
   color: #fff;
 }
 
+
+/*form .inputs {
+}*/
+
 .inputs {
   position: absolute;
   width: 55px;
@@ -58,8 +87,12 @@ form {
   font-size: 18px;
   line-height: 27px;
   color: #000;
+  width: 100%;
 }
 
+/*form .box_sizing {
+
+}*/
 .box_sizing {
   position: absolute;
   width: 427px;
