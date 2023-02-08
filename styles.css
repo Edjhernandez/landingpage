@@ -1,5 +1,5 @@
 html,
-body {
+body {/* features to put references */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: auto;
+  margin-left: auto;/* to show in center with few px on big screens */
   margin-right: auto;
   height: 100%;
 }
@@ -25,10 +25,26 @@ body {
   height: 50%;
 }
 
-.container .rectangle1 h1,
-p {
+.container .rectangle1 h1 {
   max-width: 250px;
+  font-family: 'Bebas Neue', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 50px;
   text-align: center;
+  color: #fff;
+}
+
+.container .rectangle1 p {
+  max-width: 250px;
+  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
 }
 
 .container .rectangle2 {
@@ -36,12 +52,10 @@ p {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  background: blue;
   height: 50%;
 }
 
 form {
-  background-color: brown;
   display: flex;
   flex-direction: column;
   width: 75%;
@@ -49,20 +63,42 @@ form {
   justify-content: center;
 }
 
-form .inputname,
+.inputname,
 .inputemail,
-.button {
+.sign {
   display: flex;
   flex-direction: column;
-  background-color: yellow;
-  justify-content: center;
+  justify-content: space-around;
   height: 33%;
 }
 
-form label,
-input {
-  background-color: blueviolet;
+form label {
+  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
   width: 100%;
+}
+
+form input {
+  width: 100%;
+  height: 65px;
+  background: #ededed;
+  border: 1px solid #c7c7c7;
+}
+
+form button {
+  width: 100%;
+  height: 75%;
+  border: none;
+  background: #5200ff;
+  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
 }
 
 @media screen and (min-width: 510px) {
@@ -85,13 +121,17 @@ input {
     width: 45%;
   }
 
-  form .button {
-    width: 50%;
+  form .sign {
+    width: 30%;
   }
 
-  .container .rectangle1 h1,
-  p {
-    max-width: 320px;
+  .container .rectangle1 h1 {
+    max-width: 360px;
+    text-align: center;
+  }
+
+  .container .rectangle1 p {
+    max-width: 400px;
     text-align: center;
   }
 }
@@ -101,190 +141,42 @@ input {
     flex-direction: row;
     width: 100%;
     height: 100%;
-  }
-
-  .container .rectangle1 {
-    width: 50%;
     max-height: 850px;
-    height: 100%;
   }
 
+  .container .rectangle1,
   .container .rectangle2 {
     width: 50%;
-    max-height: 850px;
     height: 100%;
   }
 
   form {
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 50%;
   }
 
   form .inputname,
   .inputemail {
-    width: 45%;
+    width: 100%;
   }
 
-  form .button {
-    width: 50%;
+  form .sign {
+    width: 40%;
   }
 
-  .container .rectangle1 h1,
-  p {
-    max-width: 240px;
+  .container .rectangle1 h1 {
+    max-width: 300px;
     text-align: right;
   }
-}
 
-/*
-body {
-  display: flex;
-}
+  .container .rectangle1 p {
+    max-width: 280px;
+    text-align: right;
+  }
 
-body .container {
-  position: absolute;
-  width: 510px;
-  height: 1139px;
-  flex-box
-  display: flex;
-  flex-direction: column;
+  .sign button {
+    height: 60%;
+  }
 }
-
-body .container .rectangle1 {
-  /*position: absolute;
-  width: 510px;
-  height: 576px;
-  left: 0;
-  top: 0;
-  flex-box
-  display: flex;
-  width: 100%;     when set width 100% in father .rectangle1 and child img the picture grow
-  height: 50%;
-  background-color: #000;
-  background: url("images\Rectangle 1.png");
-  background-size: cover;
-}
-
-.rectangle1 img {
-  width: 100%;
-}
-
-form {
-  position: absolute;
-  flex-box
-  display: flex;
-  width: 100%;
-  height: 50%;
-}
-
-h1 {
-  position: absolute;
-  width: 425px;
-  height: 212px;
-  left: 42px;
-  top: 108px;
-  font-family: 'Bebas Neue', sans-serif, 'Times New Roman', Times, serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 77px;
-  text-align: center;
-  color: #fff;
-  flex-box
-  display: flex;
-  flex: 1 1 100%;
-  align-self: center;
-}
-
-/*.rectangle1 .message1 {
-  width: 100%;
-}
-
-.message1 {
-  width: 424px;
-  position: absolute;
-  height: 61px;
-  left: 42px;
-  top: 402px;
-  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  color: #fff;
-}
-
-/*form .inputs {
-}
-
-.inputs {
-  position: absolute;
-  width: 55px;
-  height: 27px;
-  left: 41px;
-  top: 658px;
-  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: #000;
-  width: 100%;
-}
-
-/*form .box_sizing {
-
-}
-.box_sizing {
-  position: absolute;
-  width: 427px;
-  height: 65px;
-  left: 41px;
-  top: 699px;
-  background: #ededed;
-  border: 1px solid #c7c7c7;
-}
-
-.inputs2 {
-  position: absolute;
-  width: 55px;
-  height: 27px;
-  left: 41px;
-  top: 804px;
-  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: #000;
-}
-
-.box_sizing2 {
-  position: absolute;
-  width: 427px;
-  height: 65px;
-  left: 41px;
-  top: 845px;
-  background: #ededed;
-  border: 1px solid #c7c7c7;
-}
-
-.button {
-  position: absolute;
-  border: none;
-  width: 427px;
-  height: 63px;
-  left: 41px;
-  top: 971px;
-  background: #5200ff;
-  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  color: #fff;
-}
-*/
