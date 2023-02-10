@@ -1,0 +1,182 @@
+html,
+body {/* features to put references */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;/* to show in center with few px on big screens */
+  margin-right: auto;
+  height: 100%;
+}
+
+.container .rectangle1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/Rectangle\ 1.png");
+  background-size: cover;
+  flex-direction: column;
+  height: 50%;
+}
+
+.container .rectangle1 h1 {
+  max-width: 250px;
+  font-family: 'Bebas Neue', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.container .rectangle1 p {
+  max-width: 250px;
+  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.container .rectangle2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 80%;
+  justify-content: center;
+}
+
+.inputname,
+.inputemail,
+.sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 33%;
+}
+
+form label {
+  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  width: 100%;
+}
+
+form input {
+  width: 100%;
+  height: 65px;
+  background: #ededed;
+  border: 1px solid #c7c7c7;
+}
+
+form button {
+  width: 100%;
+  height: 75%;
+  border: none;
+  background: #5200ff;
+  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+@media screen and (min-width: 510px) {
+  .container .rectangle1 {
+    height: 60%;
+  }
+
+  .container .rectangle2 {
+    height: 40%;
+  }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  form .inputname,
+  .inputemail {
+    width: 45%;
+  }
+
+  form .sign {
+    width: 30%;
+  }
+
+  .container .rectangle1 h1 {
+    max-width: 360px;
+    text-align: center;
+  }
+
+  .container .rectangle1 p {
+    max-width: 400px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    max-height: 850px;
+  }
+
+  .container .rectangle1,
+  .container .rectangle2 {
+    width: 50%;
+    height: 100%;
+  }
+
+  form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 50%;
+  }
+
+  form .inputname,
+  .inputemail {
+    width: 100%;
+  }
+
+  form .sign {
+    width: 40%;
+  }
+
+  .container .rectangle1 h1 {
+    max-width: 300px;
+    text-align: right;
+  }
+
+  .container .rectangle1 p {
+    max-width: 280px;
+    text-align: right;
+  }
+
+  .sign button {
+    height: 60%;
+  }
+}
